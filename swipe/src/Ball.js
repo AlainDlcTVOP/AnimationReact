@@ -5,8 +5,10 @@ class Ball extends Component {
     UNSAFE_componentWillMount() {
         this.position = new Animated.ValueXY(0, 0);
         Animated.spring(this.position, {
+
             toValue: { x: 200, y: 500 }
         }).start();
+
     }
 
     render() {
